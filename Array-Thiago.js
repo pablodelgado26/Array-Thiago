@@ -20,3 +20,11 @@ numbers.sort((a, b) => {
 })
 
 console.log(numbers);
+
+// .reverse, mostra sua Array de trás pra frente ou melhor inversamente. 
+
+let rev = [5, 4, 3, 2, 1,];
+
+let sequenciacorreta = rev.reverse();
+
+console.log({ sequenciacorreta}); 
