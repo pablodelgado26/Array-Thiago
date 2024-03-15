@@ -11,3 +11,12 @@ let frutas = ["Banana", "Uva", "Morango", "Laranja", "jambo"];
 
 let melhoresFrutas = frutas.slice(1, 3);
 console.log(melhoresFrutas);
+
+// .Sort, exibe números de Array em ordem crescente ou decrescente (sempre que for em ordem decrescente usar if).
+
+let numbers = [5, 4, 3, 2, 1];
+numbers.sort((a, b) => {
+    if (a > b) return 1;
+})
+
+console.log(numbers);
