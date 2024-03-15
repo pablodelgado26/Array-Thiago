@@ -29,8 +29,10 @@ let sequenciacorreta = rev.reverse();
 
 console.log({ sequenciacorreta}); 
 
-// .Every, passa uma função de dados sobre uma validação.
-// A exibição sempre sera em true ou false
+/*.Every, passa uma função de dados sobre uma validação, a exibição sempre sera em true ou false.
+ Será exibido a lista completa de idades. Se somente uma idade estiver menor que 18 anos será exibido false,
+se todos forem maiores que 18 anos aparecera true.
+*/
 
 let convidados = [
     { nome: "Fernando", idade: 50 },
