@@ -21,10 +21,24 @@ numbers.sort((a, b) => {
 
 console.log(numbers);
 
-// .reverse, mostra sua Array de trás pra frente ou melhor inversamente. 
+// .Reverse, mostra sua Array de trás pra frente ou melhor inversamente. 
 
 let rev = [5, 4, 3, 2, 1,];
 
 let sequenciacorreta = rev.reverse();
 
 console.log({ sequenciacorreta}); 
+
+// .Every, passa uma função de dados sobre uma validação.
+// A exibição sempre sera em true ou false
+
+let convidados = [
+    { nome: "Fernando", idade: 50 },
+    { nome: "Norma", idade: 48 },
+    { nome: "Bianca", idade: 16 },
+    { nome: "Monica", idade: 54 },    
+]
+
+let Adultos = (pessoa) => pessoa.idade >= 18;
+
+console.log(convidados.every(Adultos));
