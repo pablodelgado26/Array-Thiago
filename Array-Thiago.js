@@ -49,6 +49,6 @@ console.log(convidados.every(Adultos));
 
 let numeros = [21, 31, 44, 21, 90, 59, 65, 31, 90, 44,];
 
-let unicosnumeros = numeros.from(duplicados);
+let unicosnumeros = [...new Set(numeros)]
 
 console.log(unicosnumeros);
