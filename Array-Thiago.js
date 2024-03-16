@@ -146,6 +146,16 @@ let falasThiago = frase.split(",");
 
 console.log(falasThiago);
 
+let Thiago4 = "Turma, leiam o exercicio somente ler, eu faço isso em 5 minutos,";
+let Thiago5 = "Falem com o professor Felipe, eu não estou bravo, é só minha cara,";
+let Thiago6 = "Se atentem ao horario de entrega, rotina dos computadores, prestem atenção somente aqui.";
+
+let frase1 = Thiago4.concat(Thiago5 + Thiago6);
+
+let falasThiago1 = frase1.split(",");
+
+console.log(falasThiago1);
+
 // .Fill, substitui numeros dentro de uma array por palavras ou numeros.
 
 let esportes = [1, 2, 3, 4, 5, 6];
