@@ -3,6 +3,7 @@ let a = [1, 2, 3,];
 let b = [4, 5, 6,];
 
 let sequencia = a.concat(b);
+
 console.log(sequencia);
 
 let a1 = [7, 8, 9,];
