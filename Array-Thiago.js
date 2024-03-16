@@ -45,10 +45,10 @@ let Adultos = (pessoa) => pessoa.idade >= 18;
 
 console.log(convidados.every(Adultos));
 
-//.From pesquisar e executar para que retire numeros repetidos 
+//...new Set retira numeros repedidos em uma Array.
 
 let numeros = [21, 31, 44, 21, 90, 59, 65, 31, 90, 44,];
 
-let unicosnumeros = [...new Set(numeros)]
+let unicosnumeros = [...new Set(numeros )]
 
 console.log(unicosnumeros);
