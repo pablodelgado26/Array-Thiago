@@ -1,4 +1,4 @@
-// .Contact, uni valores ou Arrays e retorna uma nova Array com todos valores com a ordem passada.
+// .Concat, uni valores ou Arrays e retorna uma nova Array com todos valores com a ordem passada.
 let a = [1, 2, 3,];
 let b = [4, 5, 6,];
 
@@ -27,7 +27,7 @@ let rev = [5, 4, 3, 2, 1,];
 
 let sequenciacorreta = rev.reverse();
 
-console.log({ sequenciacorreta}); 
+console.log({ sequenciacorreta });
 
 /*.Every, passa uma função de dados sobre uma validação, a exibição sempre sera em true ou false.
  Será exibido a lista completa de idades. Se somente uma idade estiver menor que 18 anos será exibido false,
@@ -38,7 +38,7 @@ let convidados = [
     { nome: "Fernando", idade: 50 },
     { nome: "Norma", idade: 48 },
     { nome: "Bianca", idade: 16 },
-    { nome: "Monica", idade: 54 },    
+    { nome: "Monica", idade: 54 },
 ]
 
 let Adultos = (pessoa) => pessoa.idade >= 18;
@@ -49,7 +49,7 @@ console.log(convidados.every(Adultos));
 
 let numeros = [21, 31, 44, 21, 90, 59, 65, 31, 90, 44,];
 
-let unicosnumeros = [...new Set(numeros )]
+let unicosnumeros = [...new Set(numeros)]
 
 console.log(unicosnumeros);
 
@@ -57,7 +57,7 @@ console.log(unicosnumeros);
 também tem a funcionalidade de extrair dados de uma Array.
 */
 
-let números = [3, 4, 5, 8,]; 
+let números = [3, 4, 5, 8,];
 
 let novosnumeros = números.map((newnumbers) => newnumbers * 4);
 
@@ -67,17 +67,17 @@ let participantes = [
     { nome: "Renata", idade: 41 },
     { nome: "Flávio", idade: 31 },
     { nome: "Bianca", idade: 16 },
-    { nome: "Giuliana", idade: 52 },    
+    { nome: "Giuliana", idade: 52 },
 ]
 
 console.log(participantes.map((user) => user.nome));
-console.log(participantes.map((user) => user.idade));  
+console.log(participantes.map((user) => user.idade));
 
 /* .Find, ele procura um dado na array. O find espera sempre uma condição para buscar 
 um dado específico (sempre exibira o primeiro dado que encontrar mesmo tendo dois dados certos na condição).
 */
 
-let temperatura = [20, 25, 31, 38, 40]; 
+let temperatura = [20, 25, 31, 38, 40];
 
 let tempMenoresQue30 = temperatura.find(x => x < 30);
 
@@ -86,7 +86,7 @@ console.log(tempMenoresQue30 + " Graus");
 // .Split, transforma uma string em array, também adicionando index apartir de uma condição.
 
 let Thiago = "Boa tarde turma, praparados para novo conteudo?, se preparem, logo após teremos prova escrita,";
-let Thiago2 = "novo professor não chega, muito menos ar-condicionado,"; 
+let Thiago2 = "novo professor não chega, muito menos ar-condicionado,";
 let Thiago3 = "quando o ar chegar, deixem blusa de frio na bolsa, bom almoço gente.";
 
 let frase = Thiago.concat(Thiago2 + Thiago3);
