@@ -5,6 +5,13 @@ let b = [4, 5, 6,];
 let sequencia = a.concat(b);
 console.log(sequencia);
 
+let a1 = [7, 8, 9,];
+let b1 = [10, 11, 12,];
+
+let sequencia1 = a1.concat(b1);
+console.log(sequencia1);
+
+
 // .Slice, retorna uma copia de array sem algumas index (sempre tira index em Array sobre porções).
 
 let frutas = ["Banana", "Uva", "Morango", "Laranja", "jambo"];
