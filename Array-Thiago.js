@@ -10,6 +10,7 @@ let a1 = [7, 8, 9,];
 let b1 = [10, 11, 12,];
 
 let sequencia1 = a1.concat(b1);
+
 console.log(sequencia1);
 
 
