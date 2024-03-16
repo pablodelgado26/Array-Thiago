@@ -108,6 +108,7 @@ let participantes = [
 ]
 
 console.log(participantes.map((user) => user.nome));
+
 console.log(participantes.map((user) => user.idade));
 
 /* .Find, ele procura um dado na array. O find espera sempre uma condição para buscar 
