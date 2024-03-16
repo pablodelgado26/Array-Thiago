@@ -12,12 +12,16 @@ let sequencia1 = a1.concat(b1);
 console.log(sequencia1);
 
 
-// .Slice, retorna uma copia de array sem algumas index (sempre tira index em Array sobre porções).
+// .of cria uma array a partir de uma variável.
 
-let frutas = ["Banana", "Uva", "Morango", "Laranja", "jambo"];
+let paises = Array.of("Brasil", "França", "Italia", "Russia");
 
-let melhoresFrutas = frutas.slice(1, 3);
-console.log(melhoresFrutas);
+console.log(paises);
+
+let comidas = Array.of("Pizza", "Sushi", "Hambúrgue", "Tacos");
+
+console.log(comidas);
+
 
 // .Sort, exibe números de Array em ordem crescente ou decrescente (sempre que for em ordem decrescente usar if).
 
@@ -28,6 +32,13 @@ numbers.sort((a, b) => {
 
 console.log(numbers);
 
+let numbers1 = [1, 2, 3, 4, 5,];
+numbers.sort((a, b) => {
+    if (a <= b) return 1;
+})
+
+console.log(numbers1);
+
 // .Reverse, mostra sua Array de trás pra frente ou melhor inversamente. 
 
 let rev = [5, 4, 3, 2, 1,];
@@ -35,6 +46,12 @@ let rev = [5, 4, 3, 2, 1,];
 let sequenciacorreta = rev.reverse();
 
 console.log({ sequenciacorreta });
+
+let rev1 = [1, 2, 3, 4, 5,];
+
+let sequenciacorreta1 = rev.reverse();
+
+console.log({ sequenciacorreta1 });
 
 /*.Every, passa uma função de dados sobre uma validação, a exibição sempre sera em true ou false.
  Será exibido a lista completa de idades. Se somente uma idade estiver menor que 18 anos será exibido false,
@@ -51,6 +68,17 @@ let convidados = [
 let Adultos = (pessoa) => pessoa.idade >= 18;
 
 console.log(convidados.every(Adultos));
+
+let convidados1 = [
+    { nome: "Fernando", idade: 75 },
+    { nome: "Norma", idade: 28 },
+    { nome: "Bianca", idade: 19 },
+    { nome: "Monica", idade: 34 },
+]
+
+let Adultos1 = (pessoa) => pessoa.idade >= 18;
+
+console.log(convidados1.every(Adultos1));
 
 //...new Set, retira numeros repedidos em uma Array.
 
