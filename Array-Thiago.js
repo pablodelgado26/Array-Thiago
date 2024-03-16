@@ -82,3 +82,15 @@ let temperatura = [20, 25, 31, 38, 40];
 let tempMenoresQue30 = temperatura.find(x => x < 30);
 
 console.log(tempMenoresQue30 + " Graus");
+
+// .Split, transforma uma string em array, também adicionando index apartir de uma condição.
+
+let Thiago = "Boa tarde turma, praparados para novo conteudo?, se preparem, logo após teremos prova escrita,";
+let Thiago2 = "novo professor não chega, muito menos ar-condicionado,"; 
+let Thiago3 = "quando o ar chegar, deixem blusa de frio na bolsa, bom almoço gente.";
+
+let frase = Thiago.concat(Thiago2 + Thiago3);
+
+let falasThiago = frase.split(",");
+
+console.log(falasThiago);
