@@ -44,3 +44,11 @@ let convidados = [
 let Adultos = (pessoa) => pessoa.idade >= 18;
 
 console.log(convidados.every(Adultos));
+
+//.From pesquisar e executar para que retire numeros repetidos 
+
+let numeros = [21, 31, 44, 21, 90, 59, 65, 31, 90, 44,];
+
+let unicosnumeros = numeros.from(duplicados);
+
+console.log(unicosnumeros);
