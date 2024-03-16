@@ -71,4 +71,14 @@ let participantes = [
 ]
 
 console.log(participantes.map((user) => user.nome));
-console.log(participantes.map((user) => user.idade));
+console.log(participantes.map((user) => user.idade));  
+
+/* .Find, ele procura um dado na array. O find espera sempre uma condição para buscar 
+um dado específico (sempre exibira o primeiro dado que encontrar mesmo tendo dois dados certos na condição).
+*/
+
+let temperatura = [20, 25, 31, 38, 40]; 
+
+let tempMenoresQue30 = temperatura.find(x => x < 30);
+
+console.log(tempMenoresQue30 + " Graus");
