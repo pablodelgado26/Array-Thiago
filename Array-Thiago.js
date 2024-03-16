@@ -45,7 +45,7 @@ let Adultos = (pessoa) => pessoa.idade >= 18;
 
 console.log(convidados.every(Adultos));
 
-//...new Set retira numeros repedidos em uma Array.
+//...new Set, retira numeros repedidos em uma Array.
 
 let numeros = [21, 31, 44, 21, 90, 59, 65, 31, 90, 44,];
 
@@ -94,3 +94,21 @@ let frase = Thiago.concat(Thiago2 + Thiago3);
 let falasThiago = frase.split(",");
 
 console.log(falasThiago);
+
+// .Fill, substitui numeros dentro de uma array por palavras ou numeros.
+
+let esportes = [1, 2, 3, 4, 5, 6];
+
+esportes.fill("futebol", 0, 1);
+
+esportes.fill("volei", 1, 2,);
+
+esportes.fill("basquete", 2, 3,);
+
+esportes.fill("handball", 3, 4,);
+
+esportes.fill("natação", 4, 5,);
+
+esportes.fill("luta", 5, 6,);
+
+console.log(esportes);
