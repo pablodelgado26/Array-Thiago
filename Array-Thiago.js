@@ -14,9 +14,9 @@ console.log(melhoresFrutas);
 
 // .Sort, exibe números de Array em ordem crescente ou decrescente (sempre que for em ordem decrescente usar if).
 
-let numbers = [5, 4, 3, 2, 1];
+let numbers = [1, 2, 3, 4, 5,];
 numbers.sort((a, b) => {
-    if (a > b) return 1;
+    if (a >= b) return -1;
 })
 
 console.log(numbers);
