@@ -90,6 +90,12 @@ let unicosnumeros = [...new Set(numeros)]
 
 console.log(unicosnumeros);
 
+let numeros1 = [87, 34, 60, 53, 71, 60, 34, 87, 53, 71,];
+
+let unicosnumeros1 = [...new Set(numeros1)]
+
+console.log(unicosnumeros1);
+
 /* .map, ele é utilizado para a transformação de um novo Array a partir de um array original,
 também tem a funcionalidade de extrair dados de uma Array.
 */
@@ -117,9 +123,16 @@ um dado específico (sempre exibira o primeiro dado que encontrar mesmo tendo do
 
 let temperatura = [20, 25, 31, 38, 40];
 
-let tempMenoresQue30 = temperatura.find(x => x < 30);
+let tempMenorQue30 = temperatura.find(x => x < 30);
 
-console.log(tempMenoresQue30 + " Graus");
+console.log(tempMenorQue30 + " Graus");
+
+let temperatura1 = [20, 25, 31, 38, 40];
+
+let tempMaiorQue30 = temperatura1.find(x => x > 30);
+
+console.log(tempMaiorQue30 + " Graus");
+
 
 // .Split, transforma uma string em array, também adicionando index apartir de uma condição.
 
