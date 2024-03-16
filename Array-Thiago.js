@@ -52,3 +52,23 @@ let numeros = [21, 31, 44, 21, 90, 59, 65, 31, 90, 44,];
 let unicosnumeros = [...new Set(numeros )]
 
 console.log(unicosnumeros);
+
+/* .map, ele é utilizado para a transformação de um novo Array a partir de um array original,
+também tem a funcionalidade de extrair dados de uma Array.
+*/
+
+let números = [3, 4, 5, 8,]; 
+
+let novosnumeros = números.map((newnumbers) => newnumbers * 4);
+
+console.log(novosnumeros);
+
+let participantes = [
+    { nome: "Renata", idade: 41 },
+    { nome: "Flávio", idade: 31 },
+    { nome: "Bianca", idade: 16 },
+    { nome: "Giuliana", idade: 52 },    
+]
+
+console.log(participantes.map((user) => user.nome));
+console.log(participantes.map((user) => user.idade));
