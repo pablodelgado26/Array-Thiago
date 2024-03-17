@@ -173,3 +173,39 @@ esportes.fill("natação", 4, 5,);
 esportes.fill("luta", 5, 6,);
 
 console.log(esportes);
+
+let esportes1 = [1, 2, 3, 4, 5, 6];
+
+esportes1.fill("vermelho", 0, 1);
+
+esportes1.fill("branco", 1, 2,);
+
+esportes1.fill("azul", 2, 3,);
+
+esportes1.fill("verde", 3, 4,);
+
+esportes1.fill("amarelo", 4, 5,);
+
+esportes1.fill("preto", 5, 6,);
+
+console.log(esportes1);
+
+// .Slice, retorna uma copia de array removendo algumas index (sempre tira index em Array sobre porções).
+
+let frutas = ["Banana", "Uva", "Morango", "Laranja",];
+
+let melhoresFrutas = frutas.slice(1, 3);
+
+console.log(melhoresFrutas);
+
+// .slice substituindo
+
+melhoresFrutas.splice(5, 2, "kiwi", "melão");
+
+console.log(melhoresFrutas);
+
+// .slice adicionando
+
+melhoresFrutas.splice(5, 4, "jambo");
+
+console.log(melhoresFrutas);
